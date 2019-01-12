@@ -1,0 +1,28 @@
+{
+  "libraryPath": "/home/root/books",
+  "refreshEvery": 24,
+  "summarySize": 1,
+  "import": {
+    "unmountTrigger": true,
+    "allowedKinds": [
+      "fb2",
+      "epub",
+      "cbz",
+      "jpeg",
+      "png",
+      "djvu",
+      "html",
+      "jpg",
+      "pdf"
+    ]
+  },
+  "reader": {
+    "finished": "notify"
+  },
+  "frontlightLevels": {
+    "intensity": 0.0,
+    "warmth": 0.0
+  },
+  "frontlight": true,
+  "wifi": false
+}

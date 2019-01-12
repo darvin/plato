@@ -2,27 +2,25 @@
 
 ![Logo](artworks/plato-logo.svg)
 
-*Plato* is a document reader for *Kobo*'s e-readers.
+This is a fork of the [Plato document reader](https://github.com/baskerville/plato) for the reMarkable tablet.  It has been modified to use [libremarkable](https://github.com/canselcik/libremarkable) for rendering.
 
-It was tested on the following devices:
+## Installation
 
-- *Aura ONE* (FW 4.7.10413).
-- *Glo HD* (FW 4.7.10413 and 3.19.5761).
-- *Aura H₂O Edition 2*.
-- *Aura Edition 2*.
-- *Glo*.
-- *Touch C*.
+Download a release zip from [Releases](http://github.com/darvin/plato/releases) and copy it to the reMarkable.
 
-## Supported formats
+``` bash
+mkdir /home/root/plato
+mv plato_release.zip /home/root/plato
+cd /home/root/plato
+unzip plato_release.zip
+./remarkable_install.sh
+```
 
-- PDF, ePUB and CBZ via *mupdf*.
-- DJVU via *djvulibre*.
+Stop xochitl with `systemctl stop xochitl`.
 
-## Features
+Start Plato with `systemctl start plato`.
 
-- Hierarchical categories.
-- The metadata for each document is read from a single JSON file.
-- Crop margins of non-reflowable documents.
+## Screenshots
 
 [![Tn01](artworks/thumbnail01.png)](artworks/screenshot01.png) [![Tn02](artworks/thumbnail02.png)](artworks/screenshot02.png)
 
