@@ -1,0 +1,11 @@
+[Unit]
+Description=plato reader
+
+[Service]
+WorkingDirectory=/home/root/plato
+Environment="LD_LIBRARY_PATH=libs"
+ExecStart=/home/root/plato/plato
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
